@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RajniBala Yadav | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Portfolio of RajniBala Yadav, a Senior Web Developer skilled in PHP, Laravel, Shopify theme development, and backend development.">
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 5px;
+
+        }
+
+        ::-webkit-scrollbar-track {
+            /* background: #f1f1f1; /* Color of the scrollbar track */
+            /* border-radius: 14px; /* Make it rounded */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #2977f4;
+            /* border-radius: 14px; */
+            /* border: 3px solid #f1f1f1; /* Add space around handle */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #1873db;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #F0F4F8, #C9E2F0);
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #3989e3, #2b70df);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 5px 0;
+            color: #383838;
+            ;
+        }
+
+        nav {
+            background-color: #2980b9;
+            padding: 10px 0;
+            text-align: center;
+            /* display: none; */
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            transition: background-color 0.3s;
+        }
+
+        section {
+            padding: 0px 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .project a {
+            color: #2980b9;
+        }
+
+        .project a:hover {
+            color: #0b7eca;
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+        }
+
+        ul li {
+            padding: 10px;
+            color: #7f8c8d;
+            font-size: 18px;
+        }
+
+        .skills-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .skills-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 769px) {
+            .skills-list {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #2980b9;
+            /* margin-top: 30px; */
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #34495e;
+        }
+
+        .project {
+            background-color: white;
+            border: 1px solid #ecf0f1;
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #FFEB3B;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        .navbar {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 15px;
+            position: relative;
+        }
+
+        .navbar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-toggle {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .navbar-collapse {
+            display: none;
+        }
+
+        .navbar-collapse.active {
+            display: block;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar-nav li {
+            padding: 10px 0;
+        }
+
+        .navbar-nav a {
+            text-decoration: none;
+            color: #2C3E50;
+            font-size: 18px;
+        }
+
+        .educational-details ul li {
+            color: #34495e;
+        }
+
+        .contact-me a:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+            nav {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+
+            .navbar {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>RajniBala Yadav</h1>
+        <p>Senior Web Developer | PHP | Laravel | Shopify Developer | Backend Developer | JavaScript </p>
+
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#hire-me">Why Hire Me?</a>
+    </nav>
+
+    <nav class="navbar" style="display: none;">
+        <div class="navbar-header">
+            <button class="navbar-toggle" onclick="toggleMenu()">
+                &#9776;
+            </button>
+        </div>
+        <div class="navbar-collapse" id="mobileMenu">
+            <ul class="navbar-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a dedicated software developer with over 5 years of experience in PHP, Laravel, CodeIgniter, and JavaScript frameworks (Vue, React, Node.js). With a strong passion for developing robust and scalable web solutions, I thrive in dynamic team environments that encourage continuous learning and innovation.
+        </p>
+        <p>
+           I specialize in backend development and enjoy contributing to team success through my technical expertise and dedication.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>
+            I bring a comprehensive skill set to every project, ensuring seamless execution and smooth delivery across
+            all aspects of web development:
+        </p>
+        <ul>
+            <li><b>Programming Languages: </b>PHP, JavaScript, ReactJS</li>
+            <li><b>Frameworks: </b>Laravel, CodeIgniter, Node.js</li>
+            <li><b>Databases: </b>MySQL, MongoDB, MS Access</li>
+            <li><b>API Development: </b>RESTful API creation and integration, Postman </li>
+            <li><b>CMS Expertise: </b>Shopify (Liquid), Magento</li>
+            <li><b>Project Management Tools: </b>Trello, Slack, Jira</li>
+            <li><b>Other Tools: </b>AdminLTE, Livewire,Docker, REST API, GraphQL, Composer, NPM</li>
+            <li><b>Version Control: </b>GIT, JIRA, BitBucket</li>
+
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3><a href="https://www.natures-source.com/" target="_blank">Natures-Source</a></h3>
+            <p> E-commerce site for Supplements</p>
+            <ul>
+                 <li>Handled Shopify theme customizations, optimizing the platform to meet the client’s needs.</li>
+                <li>Conducted thorough testing to ensure product price updates and promotions were reflected accurately
+                    across the site.</li>
+                <li>Updated product prices to reflect current market trends and promotions.
+                </li>
+                <li>The store more than 10K products, so managed the product data, SEO, metafields, and
+                    inventory</li>
+            </ul>
+        </div>
+      
+        <div class="project">
+            <h3>
+                <a href="https://portal.healthbuddha.ca/" target="_blank">HealthBuddha Portal</a>
+            </h3>
+            <p>Healthcare Website for Naturopathic Doctors</p>
+            <ul>
+                <li>Built a robust back-end infrastructure using Laravel, integrating RESTful APIs to enable
+                    real-time updates.</li>
+                <li>Leveraged Livewire and AdminLTE to create a dynamic admin interface, ensuring ease of use
+                    for medical professionals.</li>
+                <li>Collaborated with designers and frontend developers to deliver a seamless, user-friendly
+                    platform.</li>
+                <li> Optimized database structures for seamless data management.
+                </li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>
+                <a href="https://www.eyeplastics.com/" target="_blank">Eye Plastics</a>
+            </h3>
+            <p>Eye Healthcare Platform</p>
+            <ul>
+                <li>Led the back-end development with a focus on CRUD operations and secure data handling.</li>
+                <li>Provided maintenance and technical support to ensure that the platform met high standards of
+                    security and usability.</li>
+                <li>Identified and resolved bugs and issues, ensuring a smooth and reliable user experience for
+                    patients and administrators alike</li>
+
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>
+                <a href="https://integrityhealthnaturals.com/" target="_blank">Integrity Health Naturals</a>
+            </h3>
+            <p>E-commerce Website for Health Supplements</p>
+            <ul>
+                <li>Customized the Shopify theme using Liquid, enhancing the user experience with a focus on mobile
+                    responsiveness.</li>
+                <li>Developed and integrated features like cart management, checkout, and promotions for a smoother
+                    shopping experience.</li>
+                <li>Worked extensively on theme optimization to ensure faster load times and better performance.</li>
+            </ul>
+        </div>
+       
+     
+
+        <div class="project">
+            <h3>Additional Shopify Projects</h3>
+            <ul>
+                <li><a href="https://www.aadishuddh.in/" target="_blank"><strong>Aadi Shuddh:</strong></a>
+                    Customized Shopify theme and managed app configurations for a
+                    clothing e-commerce site.</li>
+                <li>
+                    <a href="https://tankskincare.com/" target="_blank"><strong>TankNation:</strong></a>
+                    Developed theme customizations and handled admin management for
+                    a
+                    Shopify store.
+                </li>
+                <li><a href="https://bcuzsnacks.com/" target="_blank"><strong>B'cuz Snacks:</strong></a>
+                    Focused on theme customizations, app configuration, and
+                    optimization
+                    for performance.</li>
+                <li><a href="https://aloraonlineshop.com/es/" target="_blank"><strong>Alora Life Spa:</strong></a>
+                    Delivered custom Shopify theme adjustments and integrated
+                    features
+                    based on client needs.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="education">
+        <div class="educational-details">
+            <h2>Educational Details</h2>
+            <ul>
+                <li><strong>B.E. Computer Science </strong> - B.I.S.T, Bhopal - RGPV University, Bhopal</li>
+                <li><strong>XII Standard</strong> - A.C.M. Govt. Girls H.S. School, Indore - MP Board, Bhopal</li>
+                <li><strong>X Standard</strong> - Vijayaraje Govt. G. H. S. School, Ujjain - MP Board, Bhopal</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hire-me">
+        <h2> Why Hire Me?</h2>
+        <p>
+            I believe that a successful project goes beyond delivering a working website; it’s about understanding the
+            client's business goals and creating digital experiences that help drive growth and success. With each
+            project I take on, my aim is to build scalable and maintainable solutions, ensuring that the client’s
+            platform remains
+            flexible and adaptable to future growth.</p>
+        <p>
+            I am a strong communicator and collaborator, which allows me to work effectively with diverse teams,
+            including
+            designers, frontend developers, and project managers. If you're looking for someone who can bring both
+            technicalexpertise and a solution-driven mindset to your next project, I would love the opportunity to
+            discuss how I
+            can contribute to your team's success.
+        </p>
+    </section>
+
+    <section id="contact">
+        <div class="contact-me">
+            <h2>Contact Me</h2>
+            <p>
+                <a href="mailto:resilientrajni03@gmail.com" target="_blank">Email</a> |
+                <a href="tel:+91 8962506223" target="_blank">Contact</a> |
+                <a href="https://www.linkedin.com/in/rajnibala-yadav/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/rajnibala-yadav" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p style="color: white;">© 2024 Rajnibala Yadav. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+    </script>
+</body>
+
+</html>
